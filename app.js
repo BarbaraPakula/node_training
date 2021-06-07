@@ -17,9 +17,7 @@ for (let i = 1; i <= 20; i++) {
   const randomLastName = randChoice(lastName);
   const randomAge = Math.floor(Math.random() * (105 - 18 + 1) + 18);
   const personEmail = `${randomFirstName}.${randomLastName}@gmail.com`;
-  const randomPhone = + Math.floor(Math.random() * (999999999 - 600000000 + 1) + 600000000)
-
-  console.log(randomPhone)
+  const randomPhone = `+48 ${Math.floor(Math.random() * (999999999 - 600000000 + 1) + 600000000)}`
 
   const person = {
     gender: randomGender,
